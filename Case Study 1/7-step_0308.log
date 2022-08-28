@@ -1,0 +1,175 @@
+
+--- Job 7-step_0308.gms Start 08/03/22 21:33:25 27.2.0 r944b73f WEX-WEI x86 64bit/MS Windows
+--- GAMS Parameters defined
+    Input C:\Users\zhangx\Desktop\PSA\Hybrid PSA\GAMS\03.08.2022\7-step_0308.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\zhangx\Documents\gamsdir\projdir\225a\
+    SysDir C:\Program Files\GAMS\win64\27.2\
+    WorkDir C:\Users\zhangx\Documents\gamsdir\projdir\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 27.2.0   Copyright (C) 1987-2019 GAMS Development. All rights reserved
+Licensee: Small MUD - 5 User License                     S190613/0001AP-GEN
+          Max-Planck Institut fuer Dynamik komplexer, technischer SysDC3422
+          License for teaching and research at degree granting institutions
+          License Admin: Gerrit Danker, danker@mpi-magdeburg.mpg.de        
+--- Starting compilation
+--- 7-step_0308.gms(30) 3 Mb
+--- call del 7_step_PSA_0308.gdx
+--- 7-step_0308.gms(31) 3 Mb
+--- call GDXXRW I=7_step_PSA_0308.xlsx O=7_step_PSA_0308.gdx Index=In_index!A1
+
+GDXXRW           27.2.0 r944b73f Released May 23, 2019 VS8 x86 32bit/MS Window
+Input file : C:\Users\zhangx\Documents\gamsdir\projdir\7_step_PSA_0308.xlsx
+Output file: C:\Users\zhangx\Documents\gamsdir\projdir\7_step_PSA_0308.gdx
+Substituting Index
+Total time = 3000 Ms
+--- 7-step_0308.gms(33) 3 Mb
+--- GDXin=C:\Users\zhangx\Documents\gamsdir\projdir\7_step_PSA_0308.gdx
+--- 7-step_0308.gms(662) 3 Mb
+--- Starting execution: elapsed 0:00:03.236
+--- 7-step_0308.gms(650) 6 Mb
+--- Generating NLP model PSA
+--- 7-step_0308.gms(652) 19 Mb
+---   22,740 rows  22,145 columns  118,053 non-zeroes
+---   325,617 nl-code  90,405 nl-non-zeroes
+--- 7-step_0308.gms(652) 16 Mb
+--- Executing CONOPT4: elapsed 0:00:03.354
+
+CONOPT 4         27.2.0 r944b73f Released May 23, 2019 WEI x86 64bit/MS Window
+ 
+ 
+    C O N O P T   version 4.12
+    Copyright (C) ARKI Consulting and Development A/S
+                  Bagsvaerdvej 246 A
+                  DK-2880 Bagsvaerd, Denmark
+    Licensed to:  GAMS/CONOPT OEM License
+ 
+ 
+    The user model has 22740 constraints and 22145 variables
+    with 118053 Jacobian elements, 90405 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          1.2499594579E+08 (Input point)
+ 
+    The pre-triangular part of the model has 2347 constraints and 1746 variables.
+    The post-triangular part of the model has 189 constraints and variables.
+    There are 7514 definitional constraints and defined variables.
+ 
+    Preprocessed model has 12690 constraints and 12696 variables
+    with 85552 Jacobian elements, 72920 of which are nonlinear.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+                      1.2412260542E+08 (Full preprocessed model)
+                      7.6232007011E+02 (After scaling)
+                      5.4637195248E+01 (After adjusting individual variables)
+       1  S0       0  5.3134780269E+01                 5.0E-01    21 F  F
+       2   0       0  4.2512707655E+01                 1.0E+00    11 T  T
+       3  S0       0  3.8096821957E+01                 1.0E+00    15 T  T
+       4  S0       0  2.9685925283E+01                 1.0E+00    12 T  T
+       5   0       0  2.3580963298E+01                 1.0E+00    14 T  T
+       6  S0       0  2.3042710381E+01                 1.0E+00    24 T  T
+       7   0       0  1.8781605298E+01                 1.0E+00    20 T  T
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       8  S0       0  1.7507469506E+01                 1.0E+00    16 T  T
+       9  S0       0  1.3535210750E+01                 1.0E+00    13 T  T
+      10  S0       0  1.0344424438E+01                 1.0E+00    14 T  T
+      11  S0       0  6.7771430211E+00                 1.0E+00    10 T  T
+      12  S0       0  4.2209611620E+00                 1.0E+00    10 T  T
+      13  S0       0  2.3741297503E+00                 1.0E+00     8 T  T
+      14  S0       0  2.2087419484E+00                 5.0E-01    12 F  F
+      15  S0       0  2.0745518629E+00                 5.0E-01    13 F  F
+      16  S0       0  1.9667994309E+00                 1.0E+00    17 T  T
+      17   0       0  1.8223105889E+00                 1.0E+00    21 T  T
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+      18  S0       0  1.5878363710E+00                 1.0E+00    11 T  T
+      19  S0       0  1.2955184563E+00                 1.0E+00     7 T  T
+      20   0       0  1.2517130927E+00                 1.0E+00     2 T  T
+      21   0       0  1.2515842096E+00                 1.0E+00     1 T  T
+      22   1     795  9.3321617109E-01 2.2E+02    7330 1.0E+00    25 T  T
+      23   1     712  9.1273203818E-01 1.5E+02      89 1.0E+00    25 T  T
+      24   1     658  8.9542463429E-01 2.1E+04      63 1.0E+00    25 T  T
+      25   1     657  8.6837610957E-01 1.2E+05      35 9.2E-01    29 T  T
+      26   1     611  8.6342982620E-01 1.6E+01      54 1.0E+00    27 T  T
+      27   1     611  8.3790598447E-01 1.9E+03     171 6.6E-01    50 T  T
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+      28   1     559  8.0423153566E-01 6.1E+00     207 1.0E+00    40 T  T
+      29   1     408  7.7202430713E-01 5.0E+00     169 1.0E+00    39 T  T
+      30   1     408  6.8672327609E-01 2.3E+06      94 7.6E-01    39 F  F
+      31   1     384  6.8661146509E-01 7.5E+02      25 1.0E+00    25 T  T
+      32   1     339  6.8591475016E-01 2.1E+02      47 1.0E+00    50 T  T
+      33   1     339  5.8890878764E-01 3.4E+06     268 9.5E-01   100 T  T
+      34   1      63  4.3004828477E-01 1.4E+06     300 1.0E+00    97 T  T
+      35   1      63  2.7878639920E-01 2.5E+06      41 4.7E-01    97 F  F
+      36   1      51  1.9595792931E-01 5.0E+05      27 1.0E+00    48 T  T
+      37   1      38  9.8351364340E-02 4.1E+02      30 1.0E+00    48 T  T
+   Elapsed time       41.1 seconds.
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+      38   1      38  6.7780177617E-02 1.7E+01      37 8.7E-01    48 F  F
+      39   1      28  6.3350479863E-02 2.5E+01      36 1.0E+00    25 T  T
+      40   1      13  5.2406215996E-02 2.4E+00      25 1.0E+00    15 T  T
+      41   1      11  4.9268130069E-02 1.6E+00      10 1.0E+00     5 T  T
+      42   1      11  4.6370469174E-02 9.8E-02       6 1.0E+00     1 T  T
+      43   1      10  4.3753957210E-02 9.0E-02       6 1.0E+00     2 T  T
+      44   1      10  4.0635193442E-02 8.4E-02       5 1.2E+00     1 T  T
+      45   1       9  2.7668728678E-02 7.5E-02       4 6.3E+00     1 T  T
+      46   1       9  2.7030349503E-02 2.0E+01       7 9.9E-02     8 F  T
+      47   1       9  2.5241540939E-02 6.9E+04       7 1.0E+00     6 T  T
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+      48   1       9  2.2670598024E-02 2.0E-01       6 1.0E+00     2 T  T
+      49   1       9  1.9845341609E-02 3.7E-02       5 5.0E-01     2 F  F
+      50   1       9  1.7665915708E-02 4.0E-02       5 1.2E+00     4 T  T
+      51   1       8  1.0840366059E-02 3.3E-02       4 4.1E+00     2 T  T
+      52   1       8  9.4668723705E-03 7.0E-01       4 9.3E-01     9 F  F
+      53   1       7  8.5447277134E-03 1.6E-02       4 1.1E+00     3 T  T
+      54   1       5  8.0109192122E-03 1.2E-01       6 1.0E+00     5 T  T
+      55   1       5  6.7519806740E-03 1.1E-02       4 2.1E+00     2 T  F
+      56   1       4  5.9434587999E-03 5.1E-01       5 1.0E+00     5 T  T
+      57   1       4  5.3758541405E-03 1.1E-02       5 3.1E-01     5 F  F
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+      58   1       4  4.8285306188E-03 9.7E-03       5 1.0E+00     2 T  T
+      59   1       4  2.5391389832E-03 9.7E-03       4 3.8E+00     1 T  T
+      60   1       3  5.9212811274E-04 2.0E-01       2 1.0E+00     4 T  T
+      61   1       1  7.9903761742E-05 1.0E+00       2 1.0E+00     2 T  T
+ 
+ ** Feasible solution. Value of objective =   1.741921245107E-02
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+      62   3          1.4559935522E-02 1.5E-01       7 8.1E-02    13 F  F
+      63   3          1.3100065622E-02 2.9E-01       7 2.4E-01    12 F  F
+      64   3          1.2556478944E-02 3.3E-01       7 2.3E-01     7 F  F
+      65   3          1.1981228882E-02 4.0E-02       7 6.0E-01     5 F  F
+      66   3          1.1709777654E-02 5.3E-02       7 7.2E-01     5 F  F
+      67   3          1.1615868378E-02 3.1E-02       7 1.0E+00     5 T  T
+      68   3          1.1575437625E-02 2.2E-03       3 1.1E+00     1 T  T
+      69   3          1.1236549209E-02 1.2E-03       2 3.7E+01     2 F  T
+      70   4          1.1068622027E-02 6.7E-04       2 8.8E-01     2 F  T
+      71   4          1.1067019782E-02 1.5E-04       2 1.0E+00     2 F  T
+   Elapsed time       74.9 seconds.
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+      72   4          1.1067017957E-02 5.0E-06       2 1.0E+00     1 F  T
+      73   4          1.1067017957E-02 8.8E-09       2
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+--- Restarting execution
+--- 7-step_0308.gms(652) 6 Mb
+--- Reading solution for model PSA
+--- 7-step_0308.gms(652) 6 Mb
+--- Executing after solve: elapsed 0:01:18.892
+--- 7-step_0308.gms(655) 7 Mb
+*** Status: Normal completion
+--- Job 7-step_0308.gms Stop 08/03/22 21:34:44 elapsed 0:01:18.892
